@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using TIENDAAPI.Models;
+using TIENDAAPI.Services;
 
 namespace TIENDAAPI.Data;
 
@@ -10,4 +11,5 @@ namespace TIENDAAPI.Data;
         {           
         }
         public DbSet<Producto> Productos => Set<Producto>();
+        public DbSet<Usuario> Usuarios => Set<Usuario>();
     }
